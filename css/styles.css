@@ -29,6 +29,11 @@ body {
     color: var(--text-title-color);
 }
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -42,14 +47,6 @@ body {
     padding-bottom: 25px;
 }
 
-.work-section .team-section{
-    text-align: center;
- }
-
- .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
- }
 
 .link {
     text-decoration: none;
@@ -61,7 +58,7 @@ body {
 
 /* ----------------HEADER--------------- */
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -77,6 +74,7 @@ body {
 .navigation{
     margin-right: auto;
     display: flex;
+    margin: auto;
 
 }
 
@@ -117,7 +115,6 @@ body {
     font-weight: 500;
     font-size: 14px; 
     color: var(--text-color);
-    margin-right: 50px;
 }
 
 .tel-number{
@@ -173,7 +170,9 @@ body {
 .benefits-list, .work-list, .team-list {
     display: flex;
     gap: 30px;
+
 }
+
 
 .benefits-item {
     font-weight: 700;
@@ -183,6 +182,8 @@ body {
     text-transform: uppercase;
     color: var(--text-title-color);
     margin-bottom: 10px;
+    width: calc((100% - 90px) / 4); 
+    width: 270px;
 }
 
 .benefits-text {
@@ -190,27 +191,28 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    width: calc((100% - 90px) / 4); 
+    width: 270px;
+    margin: 0;
+
 }
+
 
 /* ------------WHAT-WE-DO------TEAM------------ */
 .title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-title-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 
-.work-list {
- 
-}
-
-.team-title {
-    padding-bottom: 50px;
-}
+.work-section .team-section{
+    text-align: center;
+ }
 
 .member {
     font-weight: 500;
@@ -219,7 +221,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;   
     color: var(--text-title-color);
-    padding-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -229,16 +230,22 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    padding-bottom: 30px;
+
 }
 
 .team-box {
     background-color: var(--white-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 .team-section{
     background: #F5F4FA;
+}
 
+.team-member {
+    width: calc((100%-90px) / 4);
 }
 
 
@@ -251,7 +258,7 @@ body {
 .logo-foot {
     color: var(--white-color);
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     
 }
@@ -282,7 +289,7 @@ body {
 
 /* ----------------PORTFOLIO------------- */
 .filter {
-    padding-bottom: 56px;
+    margin-bottom: 56px;
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -317,7 +324,6 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--text-title-color);
-    padding-top: 20px;
     margin-bottom: 4px;
 
 }
@@ -327,7 +333,6 @@ body {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    padding-bottom: 20px;
 }
 
 .menu-list {
@@ -336,14 +341,18 @@ body {
     flex-wrap: wrap;
 }
 
-.menu-list-item {
-    width: calc(100%-90px / 3);
-}
+/* .menu-list-item {
+    width: calc((100%-60px) / 3);
+} */
 
 .menu-list-box {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid  #EEEEEE;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 20px 24px;
+    
+}
+
+.work-section {
+    padding-top: 0;
 }
